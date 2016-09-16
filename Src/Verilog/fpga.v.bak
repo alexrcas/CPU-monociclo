@@ -1,0 +1,64 @@
+`include "cpu.v"
+`include "componentes.v"
+`include "7sdecoder.v"
+`include "memprog.v"
+`include "microc.v"
+`include "alu.v"
+`include "uc.v"
+
+module fpga(input clk, input wire reset, input wire[3:0] num, input wire suma, input wire resta, output wire[6:0] display1, display2, display3, display4, output wire[7:0] s0, s1, s2, s3, output wire[9:0] pc_out);
+
+  reg [7:0] e0, e1, e2, e3;
+  reg [3:0] fill_data;
+  reg [6:0] fill_op, fill_timer;
+  wire timer_out;
+  
+  always @(posedge clk or posedge reset) begin
+    if (reset) begin
+      fill_data <= 4'b0000;
+      fill_op <= 7'b0000000;
+      fill_timer <= 7'b0000000;
+      e0 <= 8'b00000000;
+      e1 <= 8'b00000000;
+      e2 <= 8'b00000000;
+      e3 <= 8'b00000000;
+    end
+    else begin
+      e0 = {fill_data, num};
+      e1 = {fill_op, suma};
+      e2 = {fill_op, resta};
+      e3 = {fill_timer, timer_out};
+    end
+  end
+  
+  cpu cpu1(clk, reset, e0, e1, e2, e3, s0, s1, s2, s3, pc_out);
+  decoder deco1(timer_out, display1, display2);
+  decoder deco2(pc_out[3:0], display3, display4);
+  timer timer1(clk, timer_out);
+
+endmodule
+
+
+
+
+module timer(input clk, output reg q);
+
+  output reg delay;
+  reg [25:0] count;
+  always @(posedge clk)
+  begin
+    if(count==26'd49_999_999)
+      begin
+      count<=26'd0;
+      delay<=1;
+      q <= 1;
+      end
+    else
+      begin
+      count<=count+1;
+      delay<=0;
+      q <= 0;
+      end
+  end
+
+endmodule

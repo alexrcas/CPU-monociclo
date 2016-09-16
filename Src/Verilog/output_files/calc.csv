@@ -1,0 +1,99 @@
+# Copyright (C) 1991-2012 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Web Edition
+# File: /home/alumno/Descargas/CPUDEFINITIVA/Src/Verilog/output_files/calc.csv
+# Generated on: Mon May 23 13:25:00 2016
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Differential Pair
+clk,Input,PIN_R22,6,B6_N0,,,,
+display1[6],Output,PIN_E2,2,B2_N1,,,,
+display1[5],Output,PIN_F1,2,B2_N1,,,,
+display1[4],Output,PIN_F2,2,B2_N1,,,,
+display1[3],Output,PIN_H1,2,B2_N1,,,,
+display1[2],Output,PIN_H2,2,B2_N1,,,,
+display1[1],Output,PIN_J1,2,B2_N1,,,,
+display1[0],Output,PIN_J2,2,B2_N1,,,,
+display2[6],Output,PIN_D1,2,B2_N0,,,,
+display2[5],Output,PIN_D2,2,B2_N0,,,,
+display2[4],Output,PIN_G3,2,B2_N0,,,,
+display2[3],Output,PIN_H4,2,B2_N0,,,,
+display2[2],Output,PIN_H5,2,B2_N0,,,,
+display2[1],Output,PIN_H6,2,B2_N0,,,,
+display2[0],Output,PIN_E1,2,B2_N1,,,,
+display3[6],Output,PIN_D3,2,B2_N0,,,,
+display3[5],Output,PIN_E4,2,B2_N0,,,,
+display3[4],Output,PIN_E3,2,B2_N0,,,,
+display3[3],Output,PIN_C1,2,B2_N0,,,,
+display3[2],Output,PIN_C2,2,B2_N0,,,,
+display3[1],Output,PIN_G6,2,B2_N0,,,,
+display3[0],Output,PIN_G5,2,B2_N0,,,,
+display4[6],Output,PIN_D4,2,B2_N0,,,,
+display4[5],Output,PIN_F3,2,B2_N0,,,,
+display4[4],Output,PIN_L8,2,B2_N1,,,,
+display4[3],Output,PIN_J4,2,B2_N1,,,,
+display4[2],Output,PIN_D6,2,B2_N0,,,,
+display4[1],Output,PIN_D5,2,B2_N0,,,,
+display4[0],Output,PIN_F4,2,B2_N0,,,,
+num[3],Input,PIN_W12,7,B7_N1,,,,
+num[2],Input,PIN_V12,7,B7_N1,,,,
+num[1],Input,PIN_M22,6,B6_N0,,,,
+num[0],Input,PIN_L21,5,B5_N1,,,,
+pc_out[9],Output,,,,,,,
+pc_out[8],Output,,,,,,,
+pc_out[7],Output,PIN_Y21,6,B6_N1,,,,
+pc_out[6],Output,PIN_Y22,6,B6_N1,,,,
+pc_out[5],Output,PIN_W21,6,B6_N1,,,,
+pc_out[4],Output,PIN_W22,6,B6_N1,,,,
+pc_out[3],Output,PIN_V21,6,B6_N1,,,,
+pc_out[2],Output,PIN_V22,6,B6_N1,,,,
+pc_out[1],Output,PIN_U21,6,B6_N1,,,,
+pc_out[0],Output,PIN_U22,6,B6_N1,,,,
+reset,Input,PIN_L22,5,B5_N1,,,,
+resta,Input,PIN_T22,6,B6_N0,,,,
+s0[7],Output,PIN_U18,6,B6_N1,,,,
+s0[6],Output,PIN_Y18,6,B6_N1,,,,
+s0[5],Output,PIN_V19,6,B6_N1,,,,
+s0[4],Output,PIN_T18,6,B6_N1,,,,
+s0[3],Output,PIN_Y19,6,B6_N1,,,,
+s0[2],Output,PIN_U19,6,B6_N1,,,,
+s0[1],Output,PIN_R19,6,B6_N0,,,,
+s0[0],Output,PIN_R20,6,B6_N0,,,,
+s1[7],Output,,,,,,,
+s1[6],Output,,,,,,,
+s1[5],Output,,,,,,,
+s1[4],Output,,,,,,,
+s1[3],Output,,,,,,,
+s1[2],Output,,,,,,,
+s1[1],Output,,,,,,,
+s1[0],Output,,,,,,,
+s2[7],Output,,,,,,,
+s2[6],Output,,,,,,,
+s2[5],Output,,,,,,,
+s2[4],Output,,,,,,,
+s2[3],Output,,,,,,,
+s2[2],Output,,,,,,,
+s2[1],Output,,,,,,,
+s2[0],Output,,,,,,,
+s3[7],Output,,,,,,,
+s3[6],Output,,,,,,,
+s3[5],Output,,,,,,,
+s3[4],Output,,,,,,,
+s3[3],Output,,,,,,,
+s3[2],Output,,,,,,,
+s3[1],Output,,,,,,,
+s3[0],Output,,,,,,,
+suma,Input,PIN_R21,6,B6_N0,,,,
